@@ -1,7 +1,7 @@
 # 📚 Sistema de Gestión Bibliotecaria (SGB) - Universidad de Madeira
 
 ![Node.js](https://img.shields.io/badge/Node.js-v18%2B-green)
-![Express](https://img.shields.io/badge/Express-v4.18-blue)
+![Express](https://img.shields.io/badge/Express-v5.3-blue)
 ![SQLite3](https://img.shields.io/badge/SQLite-v3-lightgrey)
 ![Architecture](https://img.shields.io/badge/Architecture-N--Tier%20%28Layers%29-orange)
 
@@ -51,11 +51,13 @@ graph TD
     Repository -->|6. Devuelve entidades| Service
     Service -->|7. Retorna resultado| Controller
     Controller -->|8. RESPUESTA: JSON 200 OK| UI
+```
 
 ---
 
 ## 📁 Estructura del Proyecto
 
+```text
 SGB-Universidad-Madeira/
 ├── src/
 │   ├── config/
@@ -70,39 +72,56 @@ SGB-Universidad-Madeira/
 ├── .gitignore                    # Exclusión de node_modules
 ├── package.json                  # Dependencias del proyecto
 └── README.md                     # Documentación de la arquitectura
+```
 
 ---
 
 ## 🚀 Instrucciones para Ejecución Local
 
-Prerrequisitos
-Node.js (v16.x o superior)
+### Prerrequisitos
 
-npm (incluido con Node.js)
+- Node.js (v18 o superior)
+- npm (incluido con Node.js)
 
 ---
 
 ## Pasos de Instalación
 
-Clonar el repositorio:
-git clone [https://github.com/GMort01/SGB-Universidad-Madeira.git](https://github.com/GMort01/SGB-Universidad-Madeira.git)
-cd SGB-Universidad-Madeira
+1. Clonar el repositorio:
 
-Instalar dependencias:
-npm install
+    ```bash
+    git clone https://github.com/GMort01/SGB-Universidad-Madeira.git
+    ```
 
-Iniciar el servidor:
-node src/app.js
+2. Entrar en el directorio del proyecto:
 
-robar la API End-to-End:
-Abre tu navegador web o un cliente API (Postman/ThunderClient) e ingresa a:
-👉 http://localhost:3000/api/recursos
+    ```bash
+    cd SGB-Universidad-Madeira
+    ```
+
+3. Instalar las dependencias:
+
+    ```bash
+    npm install
+    ```
+
+4. Iniciar el servidor:
+
+    ```bash
+    node src/app.js
+    ```
+
+5. Probar la API desde el navegador o un cliente HTTP como Postman o Thunder Client:
+
+    ```text
+    http://localhost:3000/api/recursos
+    ```
 
 ## 👥 Información del Proyecto
-Estudiante: Manuel Morales Martínez
+**Estudiante:** Manuel Morales Martínez
 
-Institución: Fundación Universitaria Católica Lumen Gentium - UNICATÓLICA
+**Institución:** Fundación Universitaria Católica Lumen Gentium - UNICATÓLICA
 
-Curso: Desarrollo de Software II
+**Curso:** Desarrollo de Software II
 
-Docente: Fabian Stiven Valencia Córdoba
+**Docente:** Fabian Stiven Valencia Córdoba
